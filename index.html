@@ -312,7 +312,7 @@
   .map-card { position: relative; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #e9f0e6; box-shadow: var(--shadow); max-width: 640px; }
   .map-card svg { width: 100%; height: auto; display: block; }
   .map-legend { position: absolute; left: 14px; bottom: 12px; background: rgba(255,255,255,.92); border: 1px solid rgba(14,34,53,.1); border-radius: 999px; padding: 6px 13px; font-size: .82rem; font-weight: 600; color: #0e2235; display: flex; align-items: center; gap: 9px; }
-  .map-legend .ld { width: 24px; border-top: 3px dotted #d1403a; display: inline-block; }
+  .map-legend .ld { width: 24px; border-top: 3px solid #d1403a; display: inline-block; }
 
   /* Agreement checkbox */
   .agree { display: flex; align-items: flex-start; gap: 10px; font-size: .9rem; color: var(--muted); }
@@ -429,51 +429,75 @@
     <div class="wrap">
       <div class="sec-head">
         <h2>Service area</h2>
-        <p>We cover the greater Los Angeles area and Ventura County &mdash; from Oxnard and Thousand Oaks across to Pasadena and down to Long Beach, and up through Santa Clarita, Lancaster, and Palmdale.</p>
+        <p>We cover the greater Los Angeles area and Ventura County &mdash; from Oxnard and Thousand Oaks across to Pasadena and down to Long Beach, and up through Santa Clarita.</p>
       </div>
       <div class="map-card">
-        <svg viewBox="0 0 640 470" role="img" aria-label="Brightwing service area: greater Los Angeles and Ventura County">
-          <rect width="640" height="470" fill="#eef1f4"/>
-          <path d="M300 95 Q420 70 520 120 Q545 175 470 205 Q360 215 300 165 Z" fill="#e4ebe3"/>
-          <path d="M470 120 Q560 110 620 150 Q632 200 580 215 Q520 210 480 180 Z" fill="#e4ebe3"/>
-          <path d="M0 190 L79 197 L117 266 L238 287 L341 290 L366 314 L377 391 L430 400 L541 434 L640 470 L0 470 Z" fill="#cfe4f0"/>
-          <path d="M79 197 L117 266 L238 287 L341 290 L366 314 L377 391 L430 400 L541 434" fill="none" stroke="#a9cfe2" stroke-width="2.5"/>
-          <g stroke="#b9c6d4" stroke-width="2.6" fill="none" opacity="0.9" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M218 235 L341 290 L366 314"/>
-            <path d="M341 290 L429 278 L520 255"/>
-            <path d="M323 155 L429 278 L448 380"/>
-            <path d="M429 278 L474 87"/>
-            <path d="M429 278 L486 232 L600 215"/>
-            <path d="M97 225 L218 235 L323 155"/>
-            <path d="M238 199 L406 231"/>
+          <svg viewBox="0 0 640 564" role="img" aria-label="Brightwing service area: greater Los Angeles and Ventura County">
+          <defs><pattern id="mtn" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#c9d3c4" stroke-width="2"/></pattern></defs>
+          <rect width="640" height="564" fill="#f1f3ef"/>
+          <path d="M289.0 0.0 C236.7 20.0 306.2 94.0 330.3 114.8 C354.4 135.6 395.7 120.6 433.5 124.8 C471.4 129.0 522.3 134.8 557.4 139.8 C592.5 144.8 629.7 178.9 644.1 154.8 C658.6 130.6 703.3 20.8 644.1 -5.0 C584.9 -30.8 341.3 -20.0 289.0 0.0 Z" fill="#efe8da"/>
+          <path d="M351.0 164.7 C347.5 177.2 394.3 197.2 412.9 209.7 C431.5 222.2 445.2 229.6 462.5 239.6 C479.7 249.6 496.9 261.3 516.1 269.6 C535.4 277.9 557.4 285.4 578.1 289.6 C598.7 293.7 629.0 313.7 640.0 294.5 C651.0 275.4 661.3 198.9 644.1 174.7 C626.9 150.6 571.9 156.4 536.8 149.8 C501.7 143.1 464.5 132.3 433.5 134.8 C402.6 137.3 354.4 152.3 351.0 164.7 Z" fill="#dfe7da"/>
+          <path d="M351.0 164.7 C347.5 177.2 394.3 197.2 412.9 209.7 C431.5 222.2 445.2 229.6 462.5 239.6 C479.7 249.6 496.9 261.3 516.1 269.6 C535.4 277.9 557.4 285.4 578.1 289.6 C598.7 293.7 629.0 313.7 640.0 294.5 C651.0 275.4 661.3 198.9 644.1 174.7 C626.9 150.6 571.9 156.4 536.8 149.8 C501.7 143.1 464.5 132.3 433.5 134.8 C402.6 137.3 354.4 152.3 351.0 164.7 Z" fill="url(#mtn)" opacity=".7"/>
+          <path d="M165.2 329.5 C172.0 333.7 206.5 332.8 227.1 334.5 C247.7 336.1 268.4 339.5 289.0 339.5 C309.7 339.5 331.7 337.0 351.0 334.5 C370.2 332.0 394.3 328.7 404.6 324.5 C415.0 320.3 421.8 312.0 412.9 309.5 C404.0 307.0 375.1 309.5 351.0 309.5 C326.9 309.5 295.9 309.5 268.4 309.5 C240.9 309.5 203.0 306.2 185.8 309.5 C168.6 312.9 158.3 325.3 165.2 329.5 Z" fill="#dfe7da"/>
+          <path d="M165.2 329.5 C172.0 333.7 206.5 332.8 227.1 334.5 C247.7 336.1 268.4 339.5 289.0 339.5 C309.7 339.5 331.7 337.0 351.0 334.5 C370.2 332.0 394.3 328.7 404.6 324.5 C415.0 320.3 421.8 312.0 412.9 309.5 C404.0 307.0 375.1 309.5 351.0 309.5 C326.9 309.5 295.9 309.5 268.4 309.5 C240.9 309.5 203.0 306.2 185.8 309.5 C168.6 312.9 158.3 325.3 165.2 329.5 Z" fill="url(#mtn)" opacity=".7"/>
+          <path d="M144.5 189.7 C158.3 197.2 199.6 204.7 227.1 209.7 C254.6 214.7 293.8 222.2 309.7 219.7 C325.5 217.2 335.8 202.2 322.1 194.7 C308.3 187.2 256.7 179.7 227.1 174.7 C197.5 169.7 158.3 162.2 144.5 164.7 C130.8 167.2 130.8 182.2 144.5 189.7 Z" fill="#dfe7da"/>
+          <path d="M144.5 189.7 C158.3 197.2 199.6 204.7 227.1 209.7 C254.6 214.7 293.8 222.2 309.7 219.7 C325.5 217.2 335.8 202.2 322.1 194.7 C308.3 187.2 256.7 179.7 227.1 174.7 C197.5 169.7 158.3 162.2 144.5 164.7 C130.8 167.2 130.8 182.2 144.5 189.7 Z" fill="url(#mtn)" opacity=".7"/>
+          <path d="M-8.3 194.7 L4.1 214.7 L45.4 239.6 L70.2 274.6 L82.6 299.5 L123.9 324.5 L140.4 334.5 L189.9 354.5 L243.6 374.4 L268.4 364.4 L297.3 359.4 L359.2 354.5 L371.6 369.4 L384.0 384.4 L392.3 394.4 L400.5 414.4 L408.8 434.3 L417.0 454.3 L408.8 474.3 L404.6 489.2 L429.4 504.2 L458.3 519.2 L466.6 509.2 L487.2 499.2 L499.6 494.2 L536.8 504.2 L578.1 544.2 L619.4 574.1 L660.6 599.1 L650 574 L-10 574 Z" fill="#cfe3f1"/>
+          <path d="M-8.3 194.7 L4.1 214.7 L45.4 239.6 L70.2 274.6 L82.6 299.5 L123.9 324.5 L140.4 334.5 L189.9 354.5 L243.6 374.4 L268.4 364.4 L297.3 359.4 L359.2 354.5 L371.6 369.4 L384.0 384.4 L392.3 394.4 L400.5 414.4 L408.8 434.3 L417.0 454.3 L408.8 474.3 L404.6 489.2 L429.4 504.2 L458.3 519.2 L466.6 509.2 L487.2 499.2 L499.6 494.2 L536.8 504.2 L578.1 544.2 L619.4 574.1 L660.6 599.1" fill="none" stroke="#9cc4de" stroke-width="1.6" stroke-linejoin="round"/>
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M61.9 234.6 L103.2 269.6 L152.8 269.6 L227.1 289.6 L330.3 289.6 L392.3 297.0 L441.8 324.5 L479.0 344.5" stroke="#fff" stroke-width="5"/>
+          <path d="M322.1 129.8 L342.7 174.7 L379.9 214.7 L445.9 279.6 L466.6 309.5 L487.2 344.5 L536.8 384.4 L611.1 444.3" stroke="#fff" stroke-width="5"/>
+          <path d="M384.0 219.7 L384.0 299.5 L396.4 354.5 L421.2 399.4 L445.9 439.3 L507.9 469.3 L578.1 509.2" stroke="#fff" stroke-width="5"/>
+          <path d="M375.7 369.4 L425.3 359.4 L483.1 354.5 L536.8 339.5 L635.9 339.5" stroke="#fff" stroke-width="5"/>
+          <path d="M516.1 304.5 L474.8 349.5 L462.5 409.4 L462.5 504.2" stroke="#fff" stroke-width="5"/>
+          <path d="M371.6 184.7 L421.2 159.8 L487.2 124.8 L524.4 89.9 L516.1 25.0" stroke="#fff" stroke-width="5"/>
+          <path d="M392.3 219.7 L454.2 249.6 L516.1 299.5 L635.9 309.5" stroke="#fff" stroke-width="5"/>
+          <path d="M247.7 239.6 L384.0 234.6" stroke="#fff" stroke-width="5"/>
+          <path d="M218.8 284.6 L214.7 229.6" stroke="#fff" stroke-width="5"/>
+          <path d="M61.9 234.6 L103.2 269.6 L152.8 269.6 L227.1 289.6 L330.3 289.6 L392.3 297.0 L441.8 324.5 L479.0 344.5" stroke="#e3b35a" stroke-width="2.4"/>
+          <path d="M322.1 129.8 L342.7 174.7 L379.9 214.7 L445.9 279.6 L466.6 309.5 L487.2 344.5 L536.8 384.4 L611.1 444.3" stroke="#e3b35a" stroke-width="2.4"/>
+          <path d="M384.0 219.7 L384.0 299.5 L396.4 354.5 L421.2 399.4 L445.9 439.3 L507.9 469.3 L578.1 509.2" stroke="#e3b35a" stroke-width="2.4"/>
+          <path d="M375.7 369.4 L425.3 359.4 L483.1 354.5 L536.8 339.5 L635.9 339.5" stroke="#e3b35a" stroke-width="2.4"/>
+          <path d="M516.1 304.5 L474.8 349.5 L462.5 409.4 L462.5 504.2" stroke="#e3b35a" stroke-width="2.4"/>
+          <path d="M371.6 184.7 L421.2 159.8 L487.2 124.8 L524.4 89.9 L516.1 25.0" stroke="#e3b35a" stroke-width="2.4"/>
+          <path d="M392.3 219.7 L454.2 249.6 L516.1 299.5 L635.9 309.5" stroke="#e3b35a" stroke-width="2.4"/>
+          <path d="M247.7 239.6 L384.0 234.6" stroke="#e3b35a" stroke-width="2.4"/>
+          <path d="M218.8 284.6 L214.7 229.6" stroke="#e3b35a" stroke-width="2.4"/>
           </g>
-          <path d="M60 205 L90 120 L300 60 L500 32 L562 150 L560 300 L500 400 L430 415 L360 405 L300 360 L150 330 L70 275 Z" fill="rgba(209,64,58,0.07)" stroke="#d1403a" stroke-width="3" stroke-dasharray="1.5 9" stroke-linecap="round" stroke-linejoin="round"/>
-          <g font-family="Public Sans, system-ui, sans-serif" font-weight="700" font-size="10.5" fill="#2a3b4d">
-            <g><rect x="284" y="283" width="24" height="17" rx="4" fill="#fff" stroke="#9fb2c2"/><text x="296" y="295" text-anchor="middle">101</text></g>
-            <g><rect x="361" y="206" width="20" height="17" rx="4" fill="#fff" stroke="#9fb2c2"/><text x="371" y="218" text-anchor="middle">5</text></g>
-            <g><rect x="340" y="304" width="24" height="17" rx="4" fill="#fff" stroke="#9fb2c2"/><text x="352" y="316" text-anchor="middle">405</text></g>
-            <g><rect x="508" y="242" width="20" height="17" rx="4" fill="#fff" stroke="#9fb2c2"/><text x="518" y="254" text-anchor="middle">10</text></g>
-            <g><rect x="474" y="224" width="24" height="17" rx="4" fill="#fff" stroke="#9fb2c2"/><text x="486" y="236" text-anchor="middle">210</text></g>
-            <g><rect x="440" y="142" width="20" height="17" rx="4" fill="#fff" stroke="#9fb2c2"/><text x="450" y="154" text-anchor="middle">14</text></g>
-            <g><rect x="414" y="324" width="24" height="17" rx="4" fill="#fff" stroke="#9fb2c2"/><text x="426" y="336" text-anchor="middle">110</text></g>
+          <path d="M12.4 219.7 C17.2 216.3 22.7 204.7 41.3 199.7 C59.9 194.7 92.9 193.0 123.9 189.7 C154.8 186.4 194.1 188.0 227.1 179.7 C260.1 171.4 292.5 143.1 322.1 139.8 C351.7 136.5 377.1 145.6 404.6 159.8 C432.2 173.9 459.7 207.2 487.2 224.7 C514.8 242.1 549.8 246.3 569.8 264.6 C589.8 282.9 603.5 304.5 607.0 334.5 C610.4 364.4 599.4 414.8 590.5 444.3 C581.5 473.9 559.5 500.5 553.3 511.7 L536.8 506.7 L499.6 496.7 L487.2 501.7 L466.6 511.7 L458.3 521.7 L429.4 506.7 L402.6 489.2 L406.7 474.3 L415.0 454.3 L406.7 434.3 L398.5 414.4 L390.2 396.9 L381.9 386.9 L369.5 371.9 L359.2 356.9 L297.3 361.9 L268.4 366.9 L243.6 376.9 L189.9 356.9 L140.4 337.0 L123.9 327.0 L80.5 302.0 L68.1 274.6 L43.4 242.1 L12.4 219.7 Z" fill="rgba(209,64,58,0.09)" stroke="#d1403a" stroke-width="2.5" stroke-linejoin="round"/>
+          <g font-family="Public Sans, system-ui, sans-serif" font-weight="700" font-size="9.5" fill="#2a3b4d" text-anchor="middle">
+          <rect x="278.0" y="281.6" width="22" height="15" rx="4" fill="#fff" stroke="#c9a14c"/><text x="289.0" y="293.0">101</text>
+          <rect x="403.9" y="241.6" width="18" height="15" rx="4" fill="#fff" stroke="#c9a14c"/><text x="412.9" y="253.0">5</text>
+          <rect x="385.4" y="368.9" width="22" height="15" rx="4" fill="#fff" stroke="#c9a14c"/><text x="396.4" y="380.3">405</text>
+          <rect x="403.9" y="354.4" width="18" height="15" rx="4" fill="#fff" stroke="#c9a14c"/><text x="412.9" y="365.8">10</text>
+          <rect x="451.5" y="426.3" width="22" height="15" rx="4" fill="#fff" stroke="#c9a14c"/><text x="462.5" y="437.7">110</text>
+          <rect x="461.7" y="126.8" width="18" height="15" rx="4" fill="#fff" stroke="#c9a14c"/><text x="470.7" y="138.2">14</text>
+          <rect x="410.2" y="225.1" width="22" height="15" rx="4" fill="#fff" stroke="#c9a14c"/><text x="421.2" y="236.5">210</text>
+          <rect x="340.0" y="227.6" width="22" height="15" rx="4" fill="#fff" stroke="#c9a14c"/><text x="351.0" y="239.0">118</text>
+          <rect x="207.8" y="246.6" width="18" height="15" rx="4" fill="#fff" stroke="#c9a14c"/><text x="216.8" y="258.0">23</text>
           </g>
-          <g font-family="Public Sans, system-ui, sans-serif" font-size="13.5" fill="#1b2733">
-            <g><circle cx="97" cy="225" r="5" fill="#d1403a"/><text x="90" y="229" text-anchor="end" font-weight="700">Oxnard</text></g>
-            <g><circle cx="79" cy="197" r="3.5" fill="#44586a"/><text x="84" y="190">Ventura</text></g>
-            <g><circle cx="147" cy="218" r="3" fill="#6b7d8c"/><text x="140" y="214" text-anchor="end" font-size="12" fill="#6b7d8c">Camarillo</text></g>
-            <g><circle cx="238" cy="199" r="3" fill="#6b7d8c"/><text x="246" y="195" font-size="12" fill="#6b7d8c">Simi Valley</text></g>
-            <g><circle cx="218" cy="235" r="4" fill="#44586a"/><text x="226" y="248">Thousand Oaks</text></g>
-            <g><circle cx="323" cy="155" r="4" fill="#44586a"/><text x="331" y="159">Santa Clarita</text></g>
-            <g><circle cx="406" cy="231" r="3" fill="#6b7d8c"/><text x="414" y="227" font-size="12" fill="#6b7d8c">Burbank</text></g>
-            <g><circle cx="341" cy="290" r="4" fill="#44586a"/><text x="333" y="303" text-anchor="end">Santa Monica</text></g>
-            <g><circle cx="390" cy="311" r="3" fill="#6b7d8c"/><text x="398" y="315" font-size="12" fill="#6b7d8c">Inglewood</text></g>
-            <g><circle cx="429" cy="278" r="6" fill="#111c27"/><text x="440" y="282" font-weight="700" font-size="15">Los Angeles</text></g>
-            <g><circle cx="469" cy="240" r="4" fill="#44586a"/><text x="477" y="244">Pasadena</text></g>
-            <g><circle cx="448" cy="380" r="4" fill="#44586a"/><text x="456" y="384">Long Beach</text></g>
-            <g><circle cx="461" cy="48" r="4" fill="#44586a"/><text x="469" y="52">Lancaster</text></g>
-            <g><circle cx="474" cy="87" r="4" fill="#44586a"/><text x="482" y="91">Palmdale</text></g>
+          <g font-family="Public Sans, system-ui, sans-serif" fill="#1b2733" stroke="#f6f7f4" stroke-width="3.2" paint-order="stroke" stroke-linejoin="round">
+          <circle cx="70.6" cy="237.1" r="4" fill="#44586a" stroke="#fff" stroke-width="1.5"/><text x="78.6" y="241.1" text-anchor="start" font-size="13" font-weight="600" fill="#1b2733">Ventura</text>
+          <circle cx="92.1" cy="276.1" r="5" fill="#d1403a" stroke="#fff" stroke-width="1.5"/><text x="83.1" y="280.1" text-anchor="end" font-size="13.5" font-weight="700" fill="#1b2733">Oxnard</text>
+          <circle cx="149.5" cy="266.6" r="3" fill="#6b7d8c" stroke="#fff" stroke-width="1.5"/><text x="149.5" y="282.6" text-anchor="middle" font-size="11.5" font-weight="500" fill="#1b2733">Camarillo</text>
+          <circle cx="232.1" cy="289.6" r="4" fill="#44586a" stroke="#fff" stroke-width="1.5"/><text x="232.1" y="306.6" text-anchor="middle" font-size="13" font-weight="600" fill="#1b2733">Thousand Oaks</text>
+          <circle cx="255.6" cy="240.1" r="3" fill="#6b7d8c" stroke="#fff" stroke-width="1.5"/><text x="262.6" y="244.1" text-anchor="start" font-size="11.5" font-weight="500" fill="#1b2733">Simi Valley</text>
+          <circle cx="353.9" cy="178.7" r="4" fill="#44586a" stroke="#fff" stroke-width="1.5"/><text x="361.9" y="182.7" text-anchor="start" font-size="13" font-weight="600" fill="#1b2733">Santa Clarita</text>
+          <circle cx="256.0" cy="359.4" r="3" fill="#6b7d8c" stroke="#fff" stroke-width="1.5"/><text x="256.0" y="375.4" text-anchor="middle" font-size="11.5" font-weight="500" fill="#1b2733">Malibu</text>
+          <circle cx="450.5" cy="284.1" r="3" fill="#6b7d8c" stroke="#fff" stroke-width="1.5"/><text x="457.5" y="288.1" text-anchor="start" font-size="11.5" font-weight="500" fill="#1b2733">Burbank</text>
+          <circle cx="472.8" cy="303.5" r="3" fill="#6b7d8c" stroke="#fff" stroke-width="1.5"/><text x="465.8" y="307.5" text-anchor="end" font-size="11.5" font-weight="500" fill="#1b2733">Glendale</text>
+          <circle cx="375.3" cy="364.9" r="4" fill="#44586a" stroke="#fff" stroke-width="1.5"/><text x="367.3" y="368.9" text-anchor="end" font-size="13" font-weight="600" fill="#1b2733">Santa Monica</text>
+          <circle cx="477.7" cy="348.5" r="6" fill="#111c27" stroke="#fff" stroke-width="1.5"/><text x="487.7" y="352.5" text-anchor="start" font-size="15" font-weight="700" fill="#1b2733">Los Angeles</text>
+          <circle cx="518.6" cy="300.5" r="4" fill="#44586a" stroke="#fff" stroke-width="1.5"/><text x="526.6" y="304.5" text-anchor="start" font-size="13" font-weight="600" fill="#1b2733">Pasadena</text>
+          <circle cx="432.3" cy="393.4" r="3" fill="#6b7d8c" stroke="#fff" stroke-width="1.5"/><text x="439.3" y="397.4" text-anchor="start" font-size="11.5" font-weight="500" fill="#1b2733">Inglewood</text>
+          <circle cx="437.7" cy="456.8" r="3" fill="#6b7d8c" stroke="#fff" stroke-width="1.5"/><text x="444.7" y="460.8" text-anchor="start" font-size="11.5" font-weight="500" fill="#1b2733">Torrance</text>
+          <circle cx="498.4" cy="489.2" r="4" fill="#44586a" stroke="#fff" stroke-width="1.5"/><text x="506.4" y="493.2" text-anchor="start" font-size="13" font-weight="600" fill="#1b2733">Long Beach</text>
+          <circle cx="530.2" cy="85.4" r="3" fill="#a3adb6" stroke="#fff" stroke-width="1.5"/><text x="537.2" y="89.4" text-anchor="start" font-size="11.5" font-weight="500" fill="#9aa4ad">Palmdale</text>
+          <circle cx="514.5" cy="26.0" r="3" fill="#a3adb6" stroke="#fff" stroke-width="1.5"/><text x="521.5" y="30.0" text-anchor="start" font-size="11.5" font-weight="500" fill="#9aa4ad">Lancaster</text>
           </g>
-        </svg>
+          <text x="165" y="474" font-family="Public Sans, system-ui, sans-serif" font-size="13" font-style="italic" fill="#7fa7c2" letter-spacing="2">PACIFIC OCEAN</text>
+          <text x="495" y="195" font-family="Public Sans, system-ui, sans-serif" font-size="9.5" fill="#8a9a84" letter-spacing="1.5" text-anchor="middle">SAN GABRIEL MTNS</text>
+          </svg>
         <div class="map-legend"><span class="ld"></span>Our service range</div>
       </div>
       <a class="btn btn-ghost map-open" href="https://www.google.com/maps/search/?api=1&query=Los+Angeles,+CA" target="_blank" rel="noopener">Open in Google Maps</a>
